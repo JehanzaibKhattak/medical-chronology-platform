@@ -84,3 +84,8 @@ pids
 # Temporary folders
 tmp/
 temp/
+
+# AI Assistant files (large files that shouldn't be in Git)
+AI assistant.zip
+AI_assistant_extracted/
+*.pdf
