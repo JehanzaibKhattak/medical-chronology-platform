@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: smooth fonts + dark base */
+html, body, :root { height: 100%; }
+body { @apply bg-slate-900 text-slate-200 antialiased; }
