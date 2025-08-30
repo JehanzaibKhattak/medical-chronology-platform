@@ -10,9 +10,9 @@ const nextConfig = {
       },
     ],
   },
-  // Enable experimental features for better performance
+  // Disable experimental optimizeCss to avoid critters module issue
   experimental: {
-    optimizeCss: true,
+    // optimizeCss: true, // Disabled to fix build issue
   },
   // Optimize for production
   compress: true,
