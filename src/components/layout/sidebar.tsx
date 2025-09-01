@@ -21,6 +21,7 @@ import {
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from '@/contexts/theme-context'
+import { Logo } from '@/components/ui/logo'
 
 const navigationItems = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
@@ -63,25 +64,21 @@ export function Sidebar() {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <Stethoscope className="w-5 h-5 text-white" />
-              </div>
+              <Logo size="md" className="shadow-lg" />
               <div>
                 <h1 className={`font-bold text-lg ${
                   theme === 'dark' ? 'text-white' : 'text-gray-900'
-                }`}>Medical AI Assistant</h1>
+                }`}>MedChron AI</h1>
                 <p className={`text-xs ${
                   theme === 'dark' ? 'text-slate-400' : 'text-gray-600'
-                }`}>Legal Research Suite</p>
+                }`}>Medical Chronology Platform</p>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
         
         {collapsed && (
-          <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto shadow-lg">
-            <Stethoscope className="w-5 h-5 text-white" />
-          </div>
+          <Logo size="md" className="mx-auto shadow-lg" />
         )}
       </div>
 
