@@ -19,8 +19,12 @@ export function Logo({ size = 'md', className = '' }: LogoProps) {
       <Image
         src={logoImage}
         alt="MedChron AI Logo"
-        className="w-full h-full object-contain"
+        className="w-full h-full object-contain drop-shadow-none"
         priority
+        style={{
+          filter: 'none',
+          background: 'transparent'
+        }}
       />
     </div>
   )

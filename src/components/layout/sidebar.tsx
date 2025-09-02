@@ -64,7 +64,7 @@ export function Sidebar() {
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.2 }}
             >
-              <Logo size="md" className="shadow-lg" />
+              <Logo size="md" />
               <div>
                 <h1 className={`font-bold text-lg ${
                   theme === 'dark' ? 'text-white' : 'text-gray-900'
@@ -78,7 +78,7 @@ export function Sidebar() {
         </AnimatePresence>
         
         {collapsed && (
-          <Logo size="md" className="mx-auto shadow-lg" />
+          <Logo size="md" className="mx-auto" />
         )}
       </div>
 
